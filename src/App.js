@@ -1,11 +1,24 @@
-import './App.css';
+import { useState } from 'react';
+import "./App.css";
+import MainMint from './MainMint';
+import Header from './Header';
+import Footer from './Footer';
+import { Box } from '@chakra-ui/react';
 
 function App() {
-  return (
-    <div className="App">
-      <h1>The new Space Invaders 4800</h1>
-    </div>
-  );
+    const [accounts, setAccounts] = useState([]);
+
+    return (
+        <div className='App'>
+            <div className='moving-background'></div>
+            <Box w="100%" h="100%">
+              <Header accounts={accounts} setAccounts={setAccounts} />
+              <MainMint accounts={accounts} setAccounts={setAccounts} />
+              <Footer accounts={accounts} setAccounts={setAccounts} />
+            </Box>
+          {/*</div>*/}
+        </div>
+    );
 }
 
 export default App;
