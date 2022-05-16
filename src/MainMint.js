@@ -1,7 +1,7 @@
 import { useState } from "react";
 import {ethers, BigNumber } from 'ethers';
 import { Box, Button, Flex, Input, Text, Image, useMediaQuery, Stack, Container } from "@chakra-ui/react";
-import spaceInvaders40 from './SpaceInvaders4800.json';
+import spaceInvaders4800 from './SpaceInvaders4800.json';
 import alien from "./assets/misc/alien.svg";
 import alienbw from  "./assets/misc/Alien_Image_BW.png";
 import confetti from "./assets/misc/icons8-confetti-48.png";
@@ -28,7 +28,7 @@ import {
     extendTheme
   } from '@chakra-ui/react';
 
-const spaceInvaders40Address = "0xe0704b15f60D70672F6e840e11B6eD4D481820B5";
+const spaceInvaders4800Address = "0x81C1e00A6A9a4256A472247061c096F16D2545E7";
 
 const theme = extendTheme({
     components:  {
@@ -58,8 +58,8 @@ const MainMint = ({ accounts, setAccounts }) => {
             const provider = new ethers.providers.Web3Provider(window.ethereum);
             const signer = provider.getSigner();
             const contract = new ethers.Contract(
-                spaceInvaders40Address,
-                spaceInvaders40.abi,
+                spaceInvaders4800Address,
+                spaceInvaders4800.abi,
                 signer
             );
             try {
@@ -348,7 +348,7 @@ const MainMint = ({ accounts, setAccounts }) => {
                             width="100%" 
                         >
                             <a 
-                                href="https://mumbai.polygonscan.com/address/0xe0704b15f60d70672f6e840e11b6ed4d481820b5" 
+                                href="https://polygonscan.com/address/0x81C1e00A6A9a4256A472247061c096F16D2545E7" 
                                 target="_blank" 
                                 rel="noreferrer"
                             >
