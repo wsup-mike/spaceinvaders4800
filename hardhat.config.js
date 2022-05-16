@@ -1,7 +1,9 @@
 require("@nomiclabs/hardhat-waffle");
+const dotenv = require("dotenv");
+require("@nomiclabs/hardhat-etherscan");
 
-// This is a sample Hardhat task. To learn how to create your own go to
-// https://hardhat.org/guides/create-task.html
+dotenv.config();
+
 task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   const accounts = await hre.ethers.getSigners();
 
@@ -10,12 +12,18 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   }
 });
 
-// You need to export an object to set up your config
-// Go to https://hardhat.org/config/ to learn more
 
-/**
- * @type import('hardhat/config').HardhatUserConfig
- */
 module.exports = {
   solidity: "0.8.4",
+  networks: {
+    mainnet: {
+      url: process.env.REACT_APP_POLYGON_MAINNET_RPC_URL,
+      accounts: [process.env.REACT_APP_PRIVATE_KEY]
+    },
+  },
+  etherscan: {
+    apiKey: {
+      polygonscan: process.env.REACT_APP_POLYGONSCAN_API_KEY,
+    }
+  }
 };
