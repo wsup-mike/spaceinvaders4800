@@ -357,7 +357,7 @@ const MainMint = ({ accounts, setAccounts }) => {
                         </Box>
                         <Box pt="10px">
                             <a 
-                                href="https://testnets.opensea.io/collection/spaceinvaders40" 
+                                href="https://opensea.io/collection/spaceinvaders4800" 
                                 target="_blank" 
                                 rel="noreferrer"
                             > 
