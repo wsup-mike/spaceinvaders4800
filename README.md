@@ -5,21 +5,21 @@
 
 ## General build specs:
 1. _NFT Collection_: 4,800 NFTs
-2. Network: Polygon
-3. Storage: IPFS via Pinata
-4. Contract: Open Zeppelin ERC721
-5. Provider: Infura
-6. Marketplace: OpenSea
-7. Wallet: MetaMask 
-8. Dependencies include:
-    - Back End:
+2. _Network_: Polygon
+3. _Storage_: IPFS via Pinata
+4. _Contract_: Open Zeppelin ERC721
+5. _Provider_: Infura
+6. _Marketplace_: OpenSea
+7. _Wallet_: MetaMask 
+8. _Dependencies include_:
+    - _Back End_:
         * Hardhat
         * hardhat-ethers
         * hardhat-waffle
         * openzeppelin
         * dotenv
         * etherscan (verfication)
-    - Front End
+    - _Front End_:
         * React
         * ChakraUI
 
