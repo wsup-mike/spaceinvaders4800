@@ -12,14 +12,14 @@
 6. _Marketplace_: OpenSea
 7. _Wallet_: MetaMask 
 8. _Dependencies include_:
-    - _Back End_:
+    - _Back-end_:
         * Hardhat
         * hardhat-ethers
         * hardhat-waffle
         * openzeppelin
         * dotenv
         * etherscan (verfication)
-    - _Front End_:
+    - _Front-end_:
         * React
         * ChakraUI
 
