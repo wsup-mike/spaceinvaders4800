@@ -1,9 +1,9 @@
 # Welcome to Space Invaders 4.8K!
 ## Space Invaders 4.8K is an NFT minting dapp on Polygon that represents 4,800 unique space alien NFT's that anyone can publicly mint for only .5 MATIC!  
 
-## Live link: https://master--spaceinvaders4800.netlify.app/
+## Live link: [SpaceInvaders4800](https://master--spaceinvaders4800.netlify.app/)
 
-General build specs:
+## General build specs:
 1. NFT Collection: 4,800 NFTs
 2. Network: Polygon
 3. Storage: IPFS via Pinata
