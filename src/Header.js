@@ -17,7 +17,7 @@ export default function Header() {
             <Box align="center">
                 <Image 
                     src={logo_color} 
-                    width="55%"
+                    width="50%"
                     padding={isNotSmallerScreen ? "0 10%" : "0%"}
                     mt={isNotSmallerScreen ? "0%" : "5%"}
                     height="auto" 

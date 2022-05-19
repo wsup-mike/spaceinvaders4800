@@ -23,7 +23,7 @@ const Footer = () => {
                     </Box>
                     <Flex color="white" fontFamily="Roboto Flex" p={isNotSmallerScreen ? "2%" : "5% 0" } w={isNotSmallerScreen ? "50%" : "100%" } height="auto">
                         <Stack justifyContent="center">
-                            <Text fontFamily="vt323" spacing={-10} fontSize="4xl"  textAlign="center" align="left">The Aliens are coming!</Text>
+                            <Text fontFamily="vt323" spacing={-10} fontSize={isNotSmallerScreen ? "3em" : "1em"}  textAlign="center" align="left">The Aliens are coming!</Text>
                             <Text fontSize={isMiddleScreen ? "2em" : "1em"} align="left">
                             A collection of 4,800 unique, old-school, out-of-this world pixelated space alien profile pic NFTs that you can own and mint!  Spruce up your PFP game and add some variety with your very own randomly generated arcade alien today!  
                             </Text>
